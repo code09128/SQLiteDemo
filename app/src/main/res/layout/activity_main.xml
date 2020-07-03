@@ -1,0 +1,87 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/add"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="新增" />
+
+            <Button
+                android:id="@+id/edit"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="修改" />
+
+            <Button
+                android:id="@+id/del"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="刪除" />
+
+            <Button
+                android:id="@+id/clear"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="清除" />
+            <Button
+                android:id="@+id/end"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="END" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/nametitle"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="品茗：" />
+
+            <EditText
+                android:id="@+id/edname"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/pricetitle"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="價格：" />
+
+            <EditText
+                android:id="@+id/edprice"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <TableRow>
+
+            <ListView
+                android:id="@+id/listview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
